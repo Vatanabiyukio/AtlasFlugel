@@ -1,0 +1,19 @@
+﻿services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      SA_PASSWORD: Amaterasu_no_Kami
+      ACCEPT_EULA: Y
+      MSSQL_PID: Developer
+    ports:
+      - "1433:1433"
+  atlasflugel.api:
+    image: atlasflugel.api
+    build:
+      context: .
+      dockerfile: AtlasFlugel.Api/Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
