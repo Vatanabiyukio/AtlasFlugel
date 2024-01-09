@@ -6,6 +6,8 @@ Bem-vindo ao projeto AtlasFlugel API! Este repositório contém uma aplicação 
 
 - CRUD completo para pedidos (GET, POST, PUT e DELETE).
 
+![dbo](https://github.com/Vatanabiyukio/AtlasFlugel/assets/56417398/92f34d14-e491-416d-8b21-c692de8916ce)
+
 ### Modelo de JSON para Pedido
 
 ```JSON
